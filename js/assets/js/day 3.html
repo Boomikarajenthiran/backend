@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+
+
+
+
+
+// function greet(name,callback){
+
+//    console.log(name+ " "+"developer" );
+//    callback();
+ 
+// }
+// function completed(){
+//     console.log("Greeting completed");
+//     // completed();
+
+// }
+// greet("Boomika",completed);
+//==========================================================================================
+
+// function calculate(a,b,callback){
+//     let result=a+b;
+//     callback(result);
+
+// }
+// function 
+
+// function evennumber(number,callback){
+//      if(number%2===0){
+//        callback('even')
+//      }
+//      else{
+       
+//      }callback('odd')
+    
+// }
+// function print(result){
+//     console.log(result);
+
+// }
+// evennumber(10,print);
+
+   // ===========================================================================================================
+
+// const oddnumber=(num, cb)=>{
+//     if(num%2!=0){
+//         cb('odd')
+//     }
+//     else{
+//         cb('even')
+//     }
+
+// }
+
+// const print=(number)=>{
+//     console.log(number)
+// }
+// oddnumber(13,print);
+//=======================================================================================================================
+
+// function calculate(a,b, callback){
+// callback(a+b);
+// }
+
+// calculate(20,50,
+// function(result){console.log(result);
+
+// }
+// );
+//=========================================================================================================================
+// function calculate(x,y,cb){
+
+//     cb(x+y);
+
+// }
+// calculate (38,91,
+//     (print)=>{
+//         console.log(print);
+//     }
+// );
+
+// function createBankAccount(){
+//     let balance = checkBalance;
+// }
+
+//=======================================================================================================================
+ let balance=10000;
+
+const createBankAccount=()=>
+{
+    let balance=5000;
+
+
+ const checkBalance=()=>
+{
+     console.log(balance);
+}
+
+return checkBalance;
+}
+let account=createBankAccount();
+
+console.log("Outside Balance:", balance);
+account();
+
+
+
+//===========================================================================================================================
+
+const createAccount=()=>{
+    let balance=1000;
+const deposit=(amount)=>{
+
+    balance = balance + amount;
+}
+const getBalance=()=>{
+    console.log(balance);
+}
+return { 
+    deposit,
+    getBalance
+};
+
+}
+let account= createAccount();
+
+account.deposit(500);
+account.deposit(200);
+
+account.getBalance();
+
+    </script>
+</body>
+</html>
