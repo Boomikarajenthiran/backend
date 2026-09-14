@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>open console...</h2>
+    <script>
+
+
+task:1
+
+
+
+const createEmployee=()=>{
+
+    let salary = 20000;
+
+    return(amount)=>{
+              
+    salary += amount;
+
+    return salary;
+
+    }
+}
+
+let updateSalary = createEmployee();
+
+console.log(updateSalary(5000));
+
+console.log(updateSalary(3000));
+
+
+
+task : 2
+
+
+// const newNumber=()=>{
+
+// let stock = 10;
+
+
+
+// return(addstock)=>{
+     
+//         stock += addstock;
+
+//               return (sellProduct) => {
+
+//                     stock -= sellProduct;  
+                        
+//                      return stock;
+//                              }
+// }
+
+// }
+// let updating = newNumber();
+
+// let selling = updating(3);
+
+// console.log(selling(3));
+
+
+
+task :2
+
+const createStock = () => {
+    let stock = 10;
+
+    const addStock = (newStock) => {
+        stock += newStock;
+    };
+
+    const sellProduct = (selling) => {
+        stock -= selling;
+    };
+
+    const getStock = () => {
+        return stock;
+    };
+
+    return { addStock, sellProduct, getStock };
+};
+
+let added = createStock();
+
+let product = added;
+
+product.addStock(7);
+
+console.log("Stock:", product.getStock());
+
+product.sellProduct(4);
+
+console.log("Stock:", product.getStock());
+
+    </script>
+</body>
+</html>

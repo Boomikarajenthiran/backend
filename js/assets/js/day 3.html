@@ -88,73 +88,73 @@
 // }
 
 //=======================================================================================================================
- let balance=10000;
+//  let balance=10000;
 
-const createBankAccount=()=>
-{
-    let balance=5000;
+// const createBankAccount=()=>
+// {
+//     let balance=5000;
 
 
- const checkBalance=()=>
-{
-     console.log(balance);
-}
+//  const checkBalance=()=>
+// {
+//      console.log(balance);
+// }
 
-return checkBalance;
-}
-let account=createBankAccount();
+// return checkBalance;
+// }
+// let account=createBankAccount();
 
-console.log("Outside Balance:", balance);
-account();
+// console.log("Outside Balance:", balance);
+// account();
 
 
 
 //===========================================================================================================================
 
-const createAccount=()=>{
-    let balance=1000;
-const deposit=(amount)=>{
+// const createAccount=()=>{
+//     let balance=1000;
+// const deposit=(amount)=>{
 
-    balance = balance + amount;
-}
-const getBalance=()=>{
-    console.log(balance);
-}
-return { 
-    deposit,
-    getBalance
-};
+//     balance = balance + amount;
+// }
+// const getBalance=()=>{
+//     console.log(balance);
+// }
+// return { 
+//     deposit,
+//     getBalance
+// };
 
-}
-let account= createAccount();
+// }
+// let account= createAccount();
 
-account.deposit(500);
-account.deposit(200);
+// account.deposit(500);
+// account.deposit(200);
 
-account.getBalance();
+// account.getBalance();
 //=====================================================================================================================================
 
-function calculate(a,b, operation){
-    return operation(a,b);
+// function calculate(a,b, operation){
+//     return operation(a,b);
 
-}
+// }
 
-function add(a,b){
-    return a+b;
+// function add(a,b){
+//     return a+b;
 
-}
+// }
 
-function sub(a,b){
-    return a - b;
+// function sub(a,b){
+//     return a - b;
     
-}
+// }
 
-function mul(a,b){
-    return a * b;
-}
-console.log(calculate(5972334545,9658637,add));
-console.log(calculate(1000,4,sub));
-console.log(calculate(9,9,mul));
+// function mul(a,b){
+//     return a * b;
+// }
+// console.log(calculate(5972334545,9658637,add));
+// console.log(calculate(1000,4,sub));
+// console.log(calculate(9,9,mul));
 //===============================================================
 
 

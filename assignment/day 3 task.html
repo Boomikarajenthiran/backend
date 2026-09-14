@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>open console...</h2>
+    <script>
+let balance=10000;
+
+const createBankAccount=()=>
+{
+    let balance=5000;
+
+
+ const checkBalance=()=>
+{
+     console.log(balance);
+}
+
+return checkBalance;
+}
+let account=createBankAccount();
+
+console.log("Outside Balance:", balance);
+account();
+
+
+
+//=====================================================================================================================
+
+const createAccount=()=>{
+    let balance=1000;
+const deposit=(amount)=>{
+
+    balance = balance + amount;
+}
+const getBalance=()=>{
+    console.log(balance);
+}
+return { 
+    deposit,
+    getBalance
+};
+
+}
+let accoount= createAccount();
+
+accoount.deposit(500);
+accoount.deposit(200);
+
+accoount.getBalance();
+
+
+
+    </script>
+</body>
+</html>

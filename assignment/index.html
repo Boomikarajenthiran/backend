@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #111827;
+        }
+
+        /* Header */
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            border-bottom: 4px solid #374151;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 16px;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 25px;
+            text-align: center;
+            border: 2px solid #d1d5db;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #6b7280;
+            font-size: 15px;
+            margin-bottom: 22px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 11px 25px;
+            background: #f8c8dc;
+            color: #111827;
+            text-decoration: none;
+            border: 2px solid #f8c8dc;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #f3afc8;
+            border-color: #f3afc8;
+            transform: scale(1.03);
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+
+            .container {
+                width: 92%;
+                margin: 30px auto;
+            }
+
+            .cards {
+                gap: 15px;
+            }
+
+            .card {
+                padding: 25px 12px;
+            }
+
+            .card h2 {
+                font-size: 21px;
+            }
+
+            .card p {
+                font-size: 13px;
+            }
+
+            .btn {
+                padding: 9px 15px;
+                font-size: 13px;
+            }
+        }
+
+        /* Mobile - Still Side by Side */
+        @media (max-width: 500px) {
+
+            header {
+                padding: 25px 10px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 13px;
+            }
+
+            .container {
+                width: 94%;
+                margin: 25px auto;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .card {
+                padding: 22px 8px;
+                border-radius: 10px;
+            }
+
+            .card h2 {
+                font-size: 18px;
+            }
+
+            .card p {
+                font-size: 11px;
+                margin-bottom: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 9px 5px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment</h1>
+        <p>Daily Learning & Practice Tasks</p>
+    </header>
+
+    <div class="container">
+
+        <div class="cards">
+
+            <!-- Day 1 -->
+            <div class="card">
+                <h2>Day 1</h2>
+                <p>Daily Practice Tasks</p>
+
+                <a href="./day 1 task.html" class="btn">
+                    View Tasks
+                </a>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="card">
+                <h2>Day 2</h2>
+                <p>JavaScript Looping Tasks</p>
+
+                <a href="./day 2 task.html" class="btn">
+                    View Tasks
+                </a>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="card">
+                <h2>Day 3 </h2>
+                <p>JavaScript Closure functions</p>
+
+                <a href="./day 3 task.html" class="btn">
+                    View Tasks
+                </a>
+            </div>
+
+             <!-- Day 4 -->
+            <div class="card">
+                <h2>Day 4</h2>
+                <p>JavaScript Closure functions</p>
+
+                <a href="./day 4 ttask.html" class="btn">
+                    View Tasks
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

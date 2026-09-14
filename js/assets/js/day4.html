@@ -9,10 +9,6 @@
     <script>
 
 
-task:1
-
-
-
 const createEmployee=()=>{
 
     let salary = 20000;
@@ -32,9 +28,6 @@ console.log(updateSalary(5000));
 
 console.log(updateSalary(3000));
 
-
-
-task : 2
 
 
 const newNumber=()=>{
@@ -60,46 +53,40 @@ let updating = newNumber();
 
 let selling = updating(3);
 
-console.log(selling(3));
+// console.log(selling(3));
 
 
 
-task :2
 
+const createStock = () => {
+    let stock = 10;
 
-const createStock=()=>
-{
- let stock = 10 ;
+    const addStock = (newStock) => {
+        stock += newStock;
+    };
 
-const addstock=(newStock)=>{
+    const sellProduct = (selling) => {
+        stock -= selling;
+    };
 
-   stock += newStock;
-}
-const sellProduct=(selling)=>{
+    const getStock = () => {
+        return stock;
+    };
 
-   stock -= selling ;
-}
+    return { addStock, sellProduct, getStock };
+};
 
-const getStock=()=>{
+let added = createStock();
 
-      return stock;
-}
-return {addstock,sellProduct,getStock};
-}
-let  added=createStock();
+let product = added;
 
-let product= added;
+product.addStock(7);
 
-product.addstock(7);
-
-console.log("stock:", product.getstock(7));
+console.log("Stock:", product.getStock());
 
 product.sellProduct(4);
 
-console.log("stock:",product.getstock(4));
-
-
-
+console.log("Stock:", product.getStock());
     </script>
 </body>
 </html>
