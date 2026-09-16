@@ -290,6 +290,31 @@
 // I99999999
 
 
+
+Boomika
+
+Find Common Name Using Nested for Loop
+
+let group1 =["Boomika","Amutha", "Dharshana"];
+let group2 =["Akila","Kishi","Boomika"];
+for(let c=0; c<group1.length; c++){
+  for(let d=0; d<group2.length; d++)
+  {
+    if (group1[c] == group2[d]){
+     console.log(group1[c]);
+    }    
+  }
+}
+
+Explanation:
+
+group1 → First group of names.
+group2 → Second group of names.
+The outer for loop takes each element from group1 one by one.
+The inner for loop compares each group1 element with all the elements in group2.
+if condition checks whether both names are equal.
+When a match is found → console.log(group1[c]) prints that common name.
+
     </script>
 </body>
 </html>
