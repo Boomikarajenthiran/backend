@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Open console...</h2>
+
+    <script>
+//task :1
+const calculate=(a,b,cb)=>{
+
+   let result = a + b;
+   cb(result);
+
+}
+calculate(10,20,(result)=>{
+
+console.log("result=", result);
+
+
+});
+
+//task :2
+
+const checkNumber = (number) =>{
+
+   return new Promise((resolve, reject)=>{
+
+      if(number >= 10){
+
+          resolve("valid number");
+
+      }else{
+
+          reject("Invalid number")
+
+      }
+   })
+}
+
+checkNumber(20).then((result)=>{
+ 
+    console.log(result);
+
+})
+
+.catch((error)=>{
+
+  console.log(error);
+
+})
+
+
+//task:3
+
+
+
+    </script>
+    
+</body>
+</html>
